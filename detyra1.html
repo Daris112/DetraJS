@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="p3" style="color: blue;"></p>
+    <script>
+        var vargu=['Prizren','Prishtine','Ferizaj','Gjakove','Malisheve','Rahovec'];
+        var y = vargu.length;
+        var z ='';
+        var a = vargu.sort();
+        var x = 0;
+		var b = 6;
+        var c = 1;
+		while(b>=c)
+    {
+        z+=vargu[x]+" eshte "+(b)+'<br>'
+        b--
+        x++
+    }
+    document.getElementById('p3').innerHTML = z;
+    </script>
+
+
+</body>
+</html>
