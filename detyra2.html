@@ -5,30 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body id="b1">
+    <h1 id="h11">Daris</h1>
+    <button onclick="document.getElementById('h11').style.color='red'">Click</button>
+    <br><br>
+
+
+
+    <button onclick="document.getElementById('b1').style.backgroundColor='blue'">Blue</button>
+    <button onclick="document.getElementById('b1').style.backgroundColor='red'">Red</button>
+    <button onclick="document.getElementById('b1').style.backgroundColor='green'">Green</button>
+    <br><br>
+
+
+    <a href="https://www.google.com" id="link1">Google</a>
+    <button id="button1" onclick="ndrroje()">Click</button>
     <script>
-        var a = prompt('Mosha e tuaj')
-        function c()
+        function ndrroje()
         {
-            var b= a*365;
-            return b;
+            document.getElementById('link1').innerHTML="Youtube";
+            document.getElementById('link1').href="https://www.youtube.com"
         }
-        document.write(c())
     </script>
     <br><br>
+
+
+
+    <button onclick="data()">Date</button>
+    <p id="p1"></p>
     <script>
-        var personi ={
-            emri:'Daris',
-            mbiemri:'Hodza',
-            vendlindja:'Prizren',
-            mosha:14,
-        }
-        if(personi.mosha<18)
+        function data()
         {
-            document.write("Ju nuk keni te drejt te votoni");
-        }
-        else{
-            document.write("Ju keni te drejt te votoni");
+            var a = new Date();
+            document.getElementById('p1').innerHTML=a;
         }
     </script>
 </body>

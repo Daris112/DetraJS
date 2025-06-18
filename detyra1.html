@@ -6,25 +6,30 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <p id="p3" style="color: blue;"></p>
     <script>
-        var vargu=['Prizren','Prishtine','Ferizaj','Gjakove','Malisheve','Rahovec'];
-        var y = vargu.length;
-        var z ='';
-        var a = vargu.sort();
-        var x = 0;
-		var b = 6;
-        var c = 1;
-		while(b>=c)
-    {
-        z+=vargu[x]+" eshte "+(b)+'<br>'
-        b--
-        x++
-    }
-    document.getElementById('p3').innerHTML = z;
+        var a = prompt('Mosha e tuaj')
+        function c()
+        {
+            var b= a*365;
+            return b;
+        }
+        document.write(c())
     </script>
-
-
+    <br><br>
+    <script>
+        var personi ={
+            emri:'Daris',
+            mbiemri:'Hodza',
+            vendlindja:'Prizren',
+            mosha:14,
+        }
+        if(personi.mosha<18)
+        {
+            document.write("Ju nuk keni te drejt te votoni");
+        }
+        else{
+            document.write("Ju keni te drejt te votoni");
+        }
+    </script>
 </body>
 </html>
